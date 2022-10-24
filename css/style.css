@@ -120,17 +120,11 @@ li {
   padding-left:10px;
  list-style:none;
 }
-.header00 li:before{
-  content:'';
- display:inline-block;
- position:absolute;
- left:0px;
- top: 6px;
- width:5px;
- height:5px;
- border-bottom:1px solid #fff;
- border-right:1px solid #fff;
- transform:rotateZ(-45deg);
+.header00 li:before {
+  content:'\03e';
+  position: absolute;
+  left: 0px;
+  font-weight: bold;
  }
 .header00 a {
   color: #fff;
@@ -500,16 +494,27 @@ li {
 
    @media screen and (max-width:960px) {
     body {
-      /* background-color: red; */
-      
+      margin: 0 auto;
     }
+    
     .header00 {
-      width: 480px;
+      width: 375px;
       display: flex;
       flex-direction: column;
+      padding: 5px 10px 5px 10px;
     }
+    .header00 li {
+      text-align: right;
+      padding: 0 10px 0 0;
+    }
+    .header00 li:before {
+      content:'\03e';
+      position: absolute;
+      left: 280px;
+      font-weight: bold;
+     }
     .header11 {
-      width: 480px;
+      width: 375px;
       display: flex;
       flex-direction: column;
     }
@@ -517,67 +522,74 @@ li {
       text-align: center;
     }
     .header14 {
-      width: 480px;
+      width: 375px;
     }
     .header14  img {
       border: solid #fff 1px;
-      width: calc(100% / 1.2);
-      height: calc(100% / 1.2);
+      width: calc(100% / 1.1);
+      height: calc(100% / 1.1);
       display: flex;
       justify-content: space-between;
     }
-   
+    .header16 {
+      font-size: 0.75rem;
+    }
+    
     .main00 {
       position: relative;
       vertical-align: middle;
       text-align: center;
-      width: 480px;
-      height: 425px;
-      /* border: 1px solid blue; */
+      width: 375px;
+      height: 375px;
+      border: 1px solid blue;
       margin: 0 auto;
       
     }
     .main00 img {
       /* border: 1px solid purple; */
-      width: 70%;
-      
+      width: 80%;
     }
     .main00 p {
-      width: 300px;
+      /* border: 1px solid purple; */
+      width: 280px;
       } 
-      
+    .wrapper22 {
+        width: 375px;
+      }
     .main11 {
-      width: 480px;
+      border: 1px solid purple;
+      width: 375px;
     }
     .main12 {
       margin: center;
-      width: 480px;
+      width: 375px;
       display: flex;
       flex-direction: column;
     }
     .main12 li {
       margin: 20px 0 20px 0;
     }
-    .wrapper22 {
-      width: 480px;
-    }
+    
     .main13 p {
       position: absolute;
       top: 70%;
-      left: 29%;
+      left: 25%;
     }
     .main14 p {
       position: absolute;
       top: 70%;
-      left: 31%;
+      left: 27%;
     }
     .main15 p {
       position: absolute;
       top: 70%;
-      left: 35%;
+      left: 33%;
     }
 .main16 {
-  width: 480px;
+  width: 375px;
+}
+.main16 h2 {
+  padding: 10px 5px 10px 5px;
 }
 .main16 p {
   padding: 0 50px;
@@ -608,46 +620,80 @@ flex-direction: column;
 .wrapper44 {
   height: 300px;
 }
+
 .main23 {
-  width:480px;
+  border: 1px solid purple;
+  width:375px;
+  display: flex;
+flex-direction: column;
+}
+
+.main23 dt {
+  /* border: 1px red solid; */
+  font-size: 0.8rem;
+  padding: 10px 0;
+  border-bottom: 1px gray;
+}
+.main23 dd {
+  /* border: 1px green solid; */
+  font-size: 0.8rem;
+  padding: 10px 0;
+  
 }
 .main25 {
-  width: 480px;
+  width: 375px;
   height: 80px;
+  display: flex;
+flex-direction: column;
+}
+.wrapper66 {
+  width: 375;
+  height: 250px;
 }
 .wrapper66 h3 {
   margin: 0 auto;
   /* border: 1px yellow solid; */
-  width: 480px;
-  padding: 20px 0 20px 0;
+  width: 375px;
+  padding: 20px;
 }
 .main25 img {
-  width: calc(100% / 1.1);
+  width: calc(100% / 1.5);
 }
 .main25 div:first-child {
-  border-right: 1px solid #fff;
-  width: 400px;
+  border-right: none;
+  width: 375px;
+  text-align: center;
   }
 .main25 div:last-child {
-  text-align: right;
+  text-align: center;
     }
 .footer00 {
   height: 220px;
 }
 .footer11 {
-  width: 480px;
+  width: 375px;
   text-align: center;
   display: flex;
   flex-direction: column;
+  padding: 10px;
+}
+.footer11 img{
+ width: calc(100% / 1.5);
 }
 .footer12 ul {
-  width: 480px;
+  font-size: 0.6rem;
+  border: 1px red solid;
+  width: 350px;
   margin: 10px 0 10px 0; 
+}
+
 }
 .footer12 ul li:before{
   content:'';
  }
 
+
+}
 
 
   }
