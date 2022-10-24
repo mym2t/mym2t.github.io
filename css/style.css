@@ -536,7 +536,7 @@ li {
       text-align: center;
       width: 375px;
       height: 375px;
-      border: 1px solid blue;
+      
       margin: 0 auto;
       
     }
@@ -552,7 +552,7 @@ li {
         width: 375px;
       }
     .main11 {
-      border: 1px solid purple;
+      
       width: 375px;
     }
     .main12 {
@@ -617,7 +617,7 @@ flex-direction: column;
 }
 
 .main23 {
-  border: 1px solid purple;
+  
   width:375px;
   display: flex;
 flex-direction: column;
@@ -677,7 +677,7 @@ flex-direction: column;
 }
 .footer12 ul {
   font-size: 0.6rem;
-  border: 1px red solid;
+  
   width: 350px;
   margin: 10px 0 10px 0; 
 }
